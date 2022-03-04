@@ -1,0 +1,9 @@
+package in.cpg.main;
+
+public class Application_StartUp {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

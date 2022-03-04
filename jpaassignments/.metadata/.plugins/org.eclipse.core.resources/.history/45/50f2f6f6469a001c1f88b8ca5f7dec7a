@@ -1,0 +1,5 @@
+package in.cpg.lab02.domain;
+
+public class Food {
+
+}

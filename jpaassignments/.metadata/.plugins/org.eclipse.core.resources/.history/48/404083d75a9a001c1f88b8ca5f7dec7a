@@ -1,0 +1,39 @@
+package in.cpg.lab02.menuutil;
+
+import java.util.Scanner;
+
+public class MenuUtil {
+	
+	public MenuUtil() {
+		
+	}
+	
+public void start() {
+		
+		int menuChoice;
+		String continueChoice;
+		Scanner scanner = new Scanner(System.in);
+		do {
+			showMenu();	
+			System.out.println("Enter the choice : (1, 2, 3, 4, 0) : ");
+			menuChoice = scanner.nextInt();
+			scanner.nextLine();
+			switch (menuChoice) {
+			case 1: {
+				
+			}
+			}
+		}
+		while() {
+			
+		}
+}
+		
+		public void showMenu() {
+			System.out.println("1. Add Food");
+			System.out.println("2. List Food");
+			System.out.println("3. Update Food");
+			System.out.println("4. Delete Food");
+			System.out.println("0. Exit");
+		}
+}

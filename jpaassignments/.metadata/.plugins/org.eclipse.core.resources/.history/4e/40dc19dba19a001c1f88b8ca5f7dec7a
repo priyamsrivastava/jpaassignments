@@ -1,0 +1,52 @@
+package in.cpg.lab02.menuutil;
+
+import java.util.Scanner;
+
+import in.cpg.lab02.domain.Food;
+import net.bytebuddy.asm.Advice.Enter;
+
+public class MenuUtil {
+	
+	public MenuUtil() {
+		
+	}
+	
+public void start() {
+		
+		int menuChoice;
+		String continueChoice;
+		Scanner scanner = new Scanner(System.in);
+		do {
+			showMenu();	
+			System.out.println("Enter the choice : (1, 2, 3, 4, 0) : ");
+			menuChoice = scanner.nextInt();
+			scanner.nextLine();
+			switch (menuChoice) {
+			case 1: {
+				Food food = new Food();
+				System.out.println("Enter the id");
+				int id = scanner.nextInt();
+				System.out.println("Enter the name");
+				String name = scanner.nextLine();
+				System.out.println("Enter the description");
+				String description = scanner.nextLine();
+				System.out.println("Enter the price");
+				int price = scanner.nextInt();
+				System.out.println("Enter the served quantity");
+				int qty = scanner.nextInt();
+			}
+			}
+		}
+		while() {
+			
+		}
+}
+		
+		public void showMenu() {
+			System.out.println("1. Add Food");
+			System.out.println("2. List Food");
+			System.out.println("3. Update Food");
+			System.out.println("4. Delete Food");
+			System.out.println("0. Exit");
+		}
+}
